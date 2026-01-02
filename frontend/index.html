@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>F1 Telemetry Viewer</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Phaser and Chart.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>F1 Telemetry Viewer</h1>
+      </header>
+
+      <section id="controls">
+        <label>Year: <input id="year" type="number" value="2024" min="2018" max="2026" /></label>
+        <button id="loadSchedule">Load Races</button>
+        <select id="races"></select>
+        <select id="sessionType">
+          <option value="R">Race</option>
+          <option value="Q">Qualifying</option>
+          <option value="S">Sprint</option>
+        </select>
+        <button id="loadSession">Load Session</button>
+      </section>
+
+      <main>
+        <div id="game-container"></div>
+        <aside id="sidebar">
+          <div id="leaderboard">Leaderboard (loading...)</div>
+          <canvas id="telemetryChart" width="400" height="200"></canvas>
+        </aside>
+      </main>
+
+      <script src="/js/api.js"></script>
+      <script src="/js/game.js"></script>
+      <script src="/js/telemetry.js"></script>
+      <script src="/js/main.js"></script>
+    </div>
+  </body>
+</html>

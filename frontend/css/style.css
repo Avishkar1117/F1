@@ -1,0 +1,8 @@
+body { background: #0b0f17; color: #e6eef8; font-family: Inter, Arial, sans-serif; margin: 0; padding: 0; }
+header { padding: 12px 20px; background: linear-gradient(90deg,#071028,#0b1320); box-shadow: 0 2px 6px rgba(0,0,0,0.6);} 
+#controls { padding: 12px 20px; display:flex; gap:8px; align-items:center; }
+main { display:flex; gap:12px; padding:12px 20px; }
+#game-container { width: 800px; height: 600px; background: #071029; border-radius:8px; }
+#sidebar { width: 360px; }
+#leaderboard { background:#061623; padding:12px; border-radius:6px; margin-bottom:12px; }
+canvas { background:#071029; border-radius:6px; }
